@@ -1,0 +1,20 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for Hello World example
+ */
+
+grammar hello;
+
+public <greet> = (Power Options |Program| Browser | Blue |  Device Manager |Control | Player |task manager | Windows Security Center);
+
+public <command> = ( Open | Close ) (command| calculator |word | access |pad | paint |task manager|Browser );
+
+public <action> = (start | stop ) (excel |photo shop |nero |word pad|fire wall | recognize);
+
+public <net> = (site) (face book | go girl | mail);
+
+/** i have used "go girl" to work with "Google". as there is no word like "google" in the dictionary so 
+ *  it wont support that, and that will give you an error of "google" is not a dictionary word. 
+ *  and i did same with the facebook , i just divided it in to two words "face" and "book", and that works 
+ *  nicely. **/
