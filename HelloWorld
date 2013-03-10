@@ -3,10 +3,14 @@
  * Portions Copyright 2004 Sun Microsystems, Inc.
  * Portions Copyright 2004 Mitsubishi Electric Research Laboratories.
  * All Rights Reserved.  Use is subject to license terms.
- *
+ * 
  * See the file "license.terms" for information on usage and
  * redistribution of this file in the Sphinx package, and for a DISCLAIMER OF ALL
  * WARRANTIES.
+ * 
+ * i have just modified the actual HelloWorld.java file by adding few lines of code.
+ * make sure you have a look on the grammar file that i have uploaded.
+ * all the best.
  *
  */
 
