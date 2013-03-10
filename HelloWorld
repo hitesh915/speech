@@ -232,13 +232,12 @@ public class HelloWorld {
 		
 		    }
 		    
-	    			else
-		   			{
-							System.out.println("I can't hear what you said.\n");
-		    		}
-            }
+	    	else
+		   	{
+						System.out.println("I can't hear what you said.\n");
+		    }
+       }
 	   } 
-         
         else
         {
         	System.out.println("Cannot start microphone.");
