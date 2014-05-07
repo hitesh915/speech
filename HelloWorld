@@ -87,150 +87,319 @@ public class HelloWorld {
 			System.out.println("You said: " + resultText + "\n");
 			
 			if(resultText.equalsIgnoreCase("command"))
-			{
-				try{
-				Process p;
-				//resultText="";
-				p = Runtime.getRuntime().exec("cmd /c start");
-				//System.out.println("You said");
-				
-				 //resultText = result.getBestFinalResultNoFiller();
-				//System.out.println("You said: " + resultText + "\n");
-				
-				}catch(Exception e){}
-			}
-			if (resultText.equalsIgnoreCase("Power Options"))
-		    {
-		        try{
-		        Process p;	 
-		        p = Runtime.getRuntime().exec("cmd /c powercfg.cpl");
-		     
-		        }catch(Exception ae){}
-		    }
-			if (resultText.equalsIgnoreCase("Blue"))
-		    {
-		        try{
-		        Process p;	 
-		        p = Runtime.getRuntime().exec("cmd /c fsquirt");
-		     
-		        }catch(Exception ae){}
-		    }
-			if (resultText.equalsIgnoreCase("start photo shop"))
-		    {
-		        try{
-		        Process p;	 
-		        p = Runtime.getRuntime().exec("cmd /c start photoshop");
-		     
-		        }catch(Exception ae){}
-		    }
-			if (resultText.equalsIgnoreCase("CAL"))
-		    {
-		        try{
-		        Process p;	 
-		        p = Runtime.getRuntime().exec("cmd /c calc");
-		     
-		        }catch(Exception ae){}
-		    }
-			if (resultText.equalsIgnoreCase("Windows Security Center"))
-		    {
-		        try{
-		        Process p;	 
-		        p = Runtime.getRuntime().exec("cmd /c wscui.cpl");
-		     
-		        }catch(Exception ae){}
-		    }
-			else if (resultText.equalsIgnoreCase("Player"))
-		    {
-		        try{
-		        Process p;
-		        p = Runtime.getRuntime().exec("cmd /c start wmplayer");
-		        }catch(Exception ae){}
-		    }
-			else  if (resultText.equalsIgnoreCase("Programs"))
-		    {
-		        try{
-		        Process p;
-		        p = Runtime.getRuntime().exec("cmd /c start appwiz.cpl");
-		        }catch(Exception ae){}
-		    }
-			 else if (resultText.equalsIgnoreCase("Control"))
-			    {
-			        try{
-			        Process p;
-			        p = Runtime.getRuntime().exec("cmd /c control");
-			        }catch(Exception ae){}
-			    }
-			else if(resultText.equalsIgnoreCase("open paint"))
-			{	 try{
-				        Process p;
-				        p = Runtime.getRuntime().exec("cmd /c start mspaint");
-				        }catch(Exception ae){}
-			}
-			else if (resultText.equalsIgnoreCase("Browser"))
-		    {
-		        try{
-		        Process p; 
-		        p = Runtime.getRuntime().exec("cmd /c iexplore");
-		        }catch(Exception ae){}
-		     }
-			else if(resultText.equalsIgnoreCase("task manager"))
-				{	 try{
-			        Process p;
-			        p = Runtime.getRuntime().exec("cmd /c start taskmgr.exe");
-			        }catch(Exception ae){}
-		}
-			else if (resultText.equalsIgnoreCase("open pad"))
-		    {
-		        try{
-		        Process p; 
-		        p = Runtime.getRuntime().exec("cmd /c start notepad");
-		        }catch(Exception ae){}
-		     }
-			else if (resultText.equalsIgnoreCase("open word"))
-		    {
-		        try{
-		        Process p;	 
-		        p = Runtime.getRuntime().exec("cmd /c start winword");
-		        }catch(Exception ae){}
-		     }
-			
-			else if (resultText.equalsIgnoreCase("start Excel"))
-		    {
-		        try{
-		        Process p;	 
-		        p = Runtime.getRuntime().exec("cmd /c start excel");
-		        }catch(Exception ae){}
-		     }
-			else if (resultText.equalsIgnoreCase("start firewall"))
-		    {
-		        try{
-		        Process p;	
-		        p = Runtime.getRuntime().exec("cmd /c start firewall.cpl");
-		        }catch(Exception ae){}
-		     }
-			else if (resultText.equalsIgnoreCase("start nero"))
-		    {
-		        try{
-		        Process p; 
-		        p = Runtime.getRuntime().exec("cmd /c start nero");
-		        }catch(Exception ae){}
-		     }
-			else if (resultText.equalsIgnoreCase("open Access"))
-		    {
-		        try{
-		        Process p;	 
-		        p = Runtime.getRuntime().exec("cmd /c start msaccess");
-		        }catch(Exception ae){}
-		     }
-			else if (resultText.equalsIgnoreCase("Device Manager"))
-			    {
-			        try{
-			        Process p;	 
-			        p = Runtime.getRuntime().exec("cmd /c start devmgmt.msc");
-			        }catch(Exception ae){}
-			     }
-		
-		    }
+ 			{
+ 				try{
+ 				Process p;
+ 				//resultText="";
+ 				p = Runtime.getRuntime().exec("cmd /c start cmd");
+ 				//System.out.println("You said");
+ 				
+ 				 //resultText = result.getBestFinalResultNoFiller();
+ 				//System.out.println("You said: " + resultText + "\n");
+ 				
+ 				}catch(Exception er)
+ 				{}
+ 			}if (resultText.equalsIgnoreCase("close command"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start taskkill /im cmd.exe /f");
+ 		     
+ 		        }catch(Exception ae){}
+ 		    }
+ 			if (resultText.equalsIgnoreCase("Power Options"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c powercfg.cpl");
+ 		     
+ 		        }catch(Exception ae){}
+ 		    }
+ 			if (resultText.equalsIgnoreCase("Blue"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c fsquirt");
+ 		     
+ 		        }catch(Exception ae){}
+ 		    }
+ 			if (resultText.equalsIgnoreCase("start photo shop"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start photoshop");
+ 		     
+ 		        }catch(Exception ae){}
+ 		    }
+ 			if (resultText.equalsIgnoreCase("calculator"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start calc");
+ 		     
+ 		        }catch(Exception ae){}
+ 		    }
+ 			if (resultText.equalsIgnoreCase("Windows Security Center"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c wscui.cpl");
+ 		     
+ 		        }catch(Exception ae){}
+ 		    }
+ 			else if (resultText.equalsIgnoreCase("Player"))
+ 		    {
+ 		        try{
+ 		        Process p;
+ 		    	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start wmplayer");
+ 		        }catch(Exception ae){}
+ 		    }
+ 			else  if (resultText.equalsIgnoreCase("Program"))
+ 		    {
+ 		        try{
+ 		        Process p;
+ 		    	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start appwiz.cpl");
+ 		        }catch(Exception ae){}
+ 		    }
+ 			 else if (resultText.equalsIgnoreCase("Control"))
+ 			    {
+ 			        try{
+ 			        Process p;
+ 			    //	resultText="";
+ 			        p = Runtime.getRuntime().exec("cmd /c control");
+ 			        }catch(Exception ae){}
+ 			    }
+ 			else if(resultText.equalsIgnoreCase("open paint"))
+ 			{	 try{
+ 				        Process p;
+ 				    	//resultText="";
+ 				        p = Runtime.getRuntime().exec("cmd /c start mspaint");
+ 				       // System.out.println("inside");
+ 				        }catch(Exception ae){}
+ 			}
+ 			else if(resultText.equalsIgnoreCase("close paint"))
+ 			{	 try{
+ 		        Process p;
+ 		    	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start taskkill /im mspaint.exe /f");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 			}
+ 			else if(resultText.equalsIgnoreCase("close calculator"))
+ 			{	 try{
+ 		        Process p;
+ 		    	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start taskkill /im calc.exe /f");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 	}
+ 			else if (resultText.equalsIgnoreCase("Browser"))
+ 		    {
+ 		        try{
+ 		        Process p;//	resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start chrome.exe");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }else if (resultText.equalsIgnoreCase("close Browser"))
+ 			    {
+ 			        try{
+ 			        Process p;//	resultText="";
+ 			        p = Runtime.getRuntime().exec("cmd /c start taskkill /im chrome.exe /f");
+ 			       // System.out.println("inside");
+ 			        }catch(Exception ae){}
+ 			     }
+ 			
+ 			else if(resultText.equalsIgnoreCase("task manager"))
+ 				{	 try{
+ 			        Process p;
+ 			    	//resultText="";
+ 			        p = Runtime.getRuntime().exec("cmd /c start taskmgr.exe");
+ 			       // System.out.println("inside");
+ 			        }catch(Exception ae){}
+ 				}
+ 			else if(resultText.equalsIgnoreCase("Adobe"))
+ 			{	 try{
+ 		        Process p;
+ 		    	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start acrord32.exe");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 			}
+ 			else if(resultText.equalsIgnoreCase("site face book"))
+ 			{	 try{
+ 		        Process p;
+ 		    	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start chrome www.facebook.com");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 			}
+ 			else if(resultText.equalsIgnoreCase("site go girl"))
+ 			{	 try{
+ 		        Process p;
+ 		    	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start chrome www.google.com");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 			}
+ 			else if(resultText.equalsIgnoreCase("site mail"))
+ 			{	 try{
+ 		        Process p;
+ 		    	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start chrome https://mail.google.com");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 			}
+ 		     else if(resultText.equalsIgnoreCase("close task manager"))
+ 				{	 try{
+ 			        Process p;
+ 			    	//resultText="";
+ 			        p = Runtime.getRuntime().exec("cmd /c start taskkill /im taskmgr.exe /f");
+ 			       // System.out.println("inside");
+ 			        }catch(Exception ae){}
+ 		}
+ 			else if (resultText.equalsIgnoreCase("open pad"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start notepad");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }
+ 			else if (resultText.equalsIgnoreCase("close pad"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start taskkill /im notepad.exe /f");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }
+ 			else if (resultText.equalsIgnoreCase("open word"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start winword");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }
+ 			else if (resultText.equalsIgnoreCase("close word"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start taskkill /im winword.exe /f");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }
+ 			else if (resultText.equalsIgnoreCase("start word pad"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c  write");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }
+ 			else if (resultText.equalsIgnoreCase("stop word pad"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c  start taskkill /im wordpad.exe /f");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }
+ 			
+ 			else if (resultText.equalsIgnoreCase("start Excel"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start excel");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }else if (resultText.equalsIgnoreCase("stop Excel"))
+ 			    {
+ 			        try{
+ 			        Process p;	//resultText="";
+ 			        p = Runtime.getRuntime().exec("cmd /c start taskkill /im excel.exe /f");
+ 			       // System.out.println("inside");
+ 			        }catch(Exception ae){}
+ 			     }
+ 			else if (resultText.equalsIgnoreCase("start firewall"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start firewall.cpl");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }
+ 			else if (resultText.equalsIgnoreCase("close fire wall"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        String status = "status eq Windows Firewall";
+ 		        p = Runtime.getRuntime().exec("cmd /c taskkill /f /fi " +status );
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }
+ 			else if (resultText.equalsIgnoreCase("start nero"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start nero");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }
+ 			else if (resultText.equalsIgnoreCase("open Access"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start msaccess");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }
+ 			else if (resultText.equalsIgnoreCase("close access"))
+ 		    {
+ 		        try{
+ 		        Process p;	//resultText="";
+ 		        p = Runtime.getRuntime().exec("cmd /c start taskkill /im msaccess.exe /f");
+ 		       // System.out.println("inside");
+ 		        }catch(Exception ae){}
+ 		     }
+ 			else if(resultText.equalsIgnoreCase("speech recognize complete"))
+ 		    {
+ 				try{
+ 					System.out.println("Thanks for using !");
+ 					recognizer.deallocate();
+ 					System.exit(0);}
+ 				catch(Exception ecomp ){}
+ 		    }
+ 			else if(resultText.equalsIgnoreCase("speech recognize start"))
+ 		    {
+ 				try{
+ 					
+ 					recognizer.notify();
+ 					System.out.println("Hello again :-) ");
+ 					System.exit(0);}
+ 				catch(Exception estart ){}
+ 		    }
+ 			else if(resultText.equalsIgnoreCase("stop recognize"))
+ 		    {
+ 				try{
+ 					
+ 					//recognizer.wait();
+ 					System.out.println("See you later!");
+ 					System.exit(0);}
+ 				catch(Exception estop ){}
+ 		    }
+ 			else if (resultText.equalsIgnoreCase("Device Manager"))
+ 			    {
+ 			        try{
+ 			        Process p;	//resultText="";
+ 			        p = Runtime.getRuntime().exec("cmd /c start devmgmt.msc");
+ 			       // System.out.println("inside");
+ 			        }catch(Exception ae){}
+ 			     }
+ 		
+ 		    }
 		    
 	    	else
 		   	{
